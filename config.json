@@ -1,0 +1,8 @@
+{
+  "url": "https://github.com/rupeshmore",
+  "recordThinkTime": true,
+  "assignRequestToVariable": false,
+  "recordHeaders": [
+    "Content-Type"
+  ]
+}

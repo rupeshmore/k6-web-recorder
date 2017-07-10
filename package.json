@@ -1,0 +1,35 @@
+{
+  "name": "k6-web-recorder",
+  "version": "0.1.0",
+  "description": "k6-web-recorder is a web recorder for k6 load testing tool based on chrome.",
+  "main": "app.js",
+  "engineStrict" : true,
+  "engines": {
+    "node": ">= 7.6.0"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "test": "ava -v"
+  },
+  "keywords": [
+    "load",
+    "performance",
+    "k6"
+  ],
+  "author": "rupesh more",
+  "license": "MIT",
+  "devDependencies": {
+    "ava": "^0.20.0",
+    "chrome-launcher": "^0.3.1",
+    "chrome-remote-interface": "^0.24.1",
+    "minimist": "^1.2.0",
+    "moment": "^2.18.1"
+  },
+  "dependencies": {
+    "chalk": "^2.0.0",
+    "chrome-launcher": "^0.3.1",
+    "chrome-remote-interface": "^0.24.1",
+    "minimist": "^1.2.0",
+    "moment": "^2.18.1"
+  }
+}
