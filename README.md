@@ -27,9 +27,9 @@ cd k6-web-recorder
 
 if `yarn` is installed
 
-    ```
+  ```
 yarn
-    ```
+  ```
 
   or
   ```
