@@ -4,28 +4,38 @@ Web recorder for [k6](https://k6.readme.io) load testing tool using chrome.
 
 ### Pre requisites
 1. Chrome browser.
-2. Nodejs version 7.6+ installed . Download from [here](https://nodejs.org/en/download/releases/).
+2. Nodejs version 7.6+ installed. Download from [here](https://nodejs.org/en/download/releases/).
+
+  or use [nvm](https://github.com/creationix/nvm) to install and manage multiple node version.
+3. yarn (optional). Fast package manager for node.
 ---
 ## Install
-git clone `https://github.com/rupeshmore/k6-web-recorder.git`
 
+Make sure you have git installed. Go to command prompt and do
+```
+git clone https://github.com/rupeshmore/k6-web-recorder.git
+```
 or download zip.
 
-go to the directory
+Go inside the directory
 
 ```
 cd k6-web-recorder
 ```
 
-```
-npm install
-```
+#### Inside the directory
 
-or if `yarn` is installed
+if `yarn` is installed
 
-```
+    ```
 yarn
-```
+    ```
+
+  or
+  ```
+npm install
+  ```
+
 
 ## Usage
 `node app.js --url=https://github.com/rupeshmore`
@@ -50,20 +60,20 @@ edit `config.json` to record added data.
   ]
 }
 ```
-1. `url`: This is required value for the app. This can be defined in here or passed as arguments via command line.
+1. `url`: is required for the app. This can be defined in `config.json` or passed as an argument via command line.
 
-2. `recordThinkTime`: This will record think time between requests. Think Time greater than 3 seconds are only recorded. If `false` it will not capture think Time.
+2. `recordThinkTime`: This will record think time between requests. Think time greater than 1 seconds are only recorded. If `false` it will not capture think time. Default value `true`.
 
-3. `assignRequestToVariable`: This will save the http requests to a variable.
+3. `assignRequestToVariable`: This will assign the http requests to a variable.
 
   Example:
-  `assignRequestToVariable = true`
+  `assignRequestToVariable: true`
 
   ```
   let req = http.get(https://github.com/rupeshmore);
 ```
 
-  `assignRequestToVariable = false`
+  `assignRequestToVariable: false`
   ```
   http.get(https://github.com/rupeshmore);
   ```
@@ -81,12 +91,12 @@ All scripts are recorded under the `scripts` folder.
 
 - Filters out the request based on the domain of url to be recorded.
 
-- Records Think Time for the script.
+- Records think-time for the script.
 
 - Options to record specific headers in the scripts.
 
 ## Note
-All requests with `multipart/form-data` is not recorded. As the k6 tool will not be able to playback the same request as a browser does.
+All requests with `multipart/form-data` are not recorded. As the k6 tool will not be able to playback the same request as a browser does.
 
 ## Close Recording
 Close the browser to close recording or close the app.
