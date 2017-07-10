@@ -18,6 +18,10 @@
   ],
   "author": "rupesh more",
   "license": "MIT",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/rupeshmore/k6-web-recorder.git"
+  },
   "devDependencies": {
     "ava": "^0.20.0",
     "chrome-launcher": "^0.3.1",
