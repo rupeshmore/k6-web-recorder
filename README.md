@@ -86,7 +86,7 @@ All scripts are recorded under the `scripts` folder.
 - Options to record specific headers in the scripts.
 
 ## Note
-All requests with mutlipart-formdata is not recorded. As the k6 tool will not be able to playback the ame request as a browser does.
+All requests with `multipart/form-data` is not recorded. As the k6 tool will not be able to playback the same request as a browser does.
 
 ## Close Recording
 Close the browser to close recording or close the app.
