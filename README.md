@@ -7,8 +7,10 @@ Web recorder for [k6](https://k6.readme.io) load testing tool using chrome.
 2. Nodejs version 7.6+ installed. Download from [here](https://nodejs.org/en/download/releases/).
 
   or use [nvm](https://github.com/creationix/nvm) to install and manage multiple node version.
+
 3. yarn (optional). Fast package manager for node.
 ---
+
 ## Install
 
 Make sure you have git installed. Go to command prompt and do
